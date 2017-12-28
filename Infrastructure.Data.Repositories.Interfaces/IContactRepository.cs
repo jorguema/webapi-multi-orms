@@ -10,5 +10,9 @@ namespace Infrastructure.Data.Repositories.Interfaces
     public interface IContactRepository
     {
         Contact GetById(int id);
+        IEnumerable<Contact> GetAll();
+        Contact Add(Contact contact);
+        void Delete(int id);
+        Contact Save(Contact contact);
     }
 }

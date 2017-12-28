@@ -22,5 +22,20 @@ namespace Application.Services
         {
             return _contactRepository.GetById(id);
         }
+
+        public IEnumerable<Contact> GetAll()
+        {
+            return _contactRepository.GetAll();
+        }
+
+        public Contact Add(Contact contact)
+        {
+            return _contactRepository.Save(contact);
+        }
+
+        public void Delete(int id)
+        {
+            _contactRepository.Delete(id);
+        }
     }
 }

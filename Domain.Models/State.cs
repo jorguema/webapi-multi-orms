@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Domain.Models
 {
-    public class State
+    public class State: EntityBase
     {
-        public int Id { get; set; }
         public string StateName { get; set; }
     }
 }

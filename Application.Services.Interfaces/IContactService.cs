@@ -10,5 +10,8 @@ namespace Application.Services.Interfaces
     public interface IContactService
     {
         Contact GetById(int id);
+        IEnumerable<Contact> GetAll();
+        Contact Add(Contact contact);
+        void Delete(int id);
     }
 }
